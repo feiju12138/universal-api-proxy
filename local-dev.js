@@ -1,6 +1,6 @@
 const { fetchTargetApi } = require('./core.js');
 
-// 从系统变量读取配置
+// 从系统环境变量读取配置
 const TARGET_API_URL = process.env.TARGET_API_URL;
 const API_TOKEN = process.env.API_TOKEN || "";
 const REQUEST_TIMEOUT = Number(process.env.REQUEST_TIMEOUT) || 10;
