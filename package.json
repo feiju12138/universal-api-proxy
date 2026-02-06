@@ -1,0 +1,33 @@
+{
+  "name": "universal-api-proxy",
+  "version": "1.0.0",
+  "description": "Lightweight cross-platform serverless API proxy for hiding secret keys. Deploy for free on Vercel, Cloudflare Workers & more with zero hosting costs.",
+  "main": "local-dev.js",
+  "scripts": {
+    "start": "node local-dev.js",
+    "dev": "node local-dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feiju12138/universal-api-proxy.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "proxy",
+    "api",
+    "api-proxy",
+    "api-gateway",
+    "cloudflare-workers",
+    "vercel",
+    "serverless",
+    "tencent-cloud"
+  ],
+  "author": "feiju12138",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feiju12138/universal-api-proxy/issues"
+  },
+  "homepage": "https://github.com/feiju12138/universal-api-proxy#readme"
+}
