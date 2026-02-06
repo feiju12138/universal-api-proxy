@@ -12,7 +12,7 @@
     "url": "git+https://github.com/feiju12138/universal-api-proxy.git"
   },
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "keywords": [
     "proxy",
