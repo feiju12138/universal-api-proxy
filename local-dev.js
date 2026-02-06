@@ -19,11 +19,17 @@ let server = http.createServer(function (request, response) {
 
   response.setHeader("Content-Type", "application/json;charset=utf-8");
 
-  fetchTargetApi(TARGET_API_URL, API_TOKEN, REQUEST_TIMEOUT).then((result) => {
-    response.end(result);
-  }).catch((error) => {
-    response.end(error);
-  });
+  if (request.url === "/") {
+    response.end("ok");
+  }
+
+  if (request.url === "/api") {
+    fetchTargetApi(TARGET_API_URL, API_TOKEN, REQUEST_TIMEOUT).then((result) => {
+      response.end(result);
+    }).catch((error) => {
+      response.end(error);
+    });
+  }
 
 });
 
