@@ -30,7 +30,7 @@ app.get("/api", async (req, res) => {
   // 读取环境变量
   const TARGET_API_URL = process.env.TARGET_API_URL;
   const API_TOKEN = process.env.API_TOKEN || "";
-  const REQUEST_TIMEOUT = Number(process.REQUEST_TIMEOUT) || 10;
+  const REQUEST_TIMEOUT = Number(process.env.REQUEST_TIMEOUT) || 10;
 
   // 校验必填配置
   if (!TARGET_API_URL) {
