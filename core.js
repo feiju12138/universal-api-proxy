@@ -12,7 +12,7 @@ async function fetchTargetApi(TARGET_API_URL, API_TOKEN, REQUEST_TIMEOUT = 10) {
 
   // 入参校验
   if (!TARGET_API_URL) {
-    const errorMsg = "env TARGET_API_URL is require";
+    const errorMsg = "env TARGET_API_URL is required";
     console.error(errorMsg);
     throw new Error(errorMsg);
   }
