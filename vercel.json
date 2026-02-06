@@ -12,11 +12,5 @@
     "env": {
       "NODE_ENV": "production"
     }
-  },
-  "functions": {
-    "api/index.js": {
-      "runtime": "@vercel/node@3.4.1",
-      "maxDuration": 10
-    }
   }
 }
