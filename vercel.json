@@ -4,11 +4,7 @@
   "public": true,
   "routes": [
     {
-      "src": "/",
-      "dest": "/vercel/index.js"
-    },
-    {
-      "src": "/api",
+      "src": "/(.*)",
       "dest": "/vercel/index.js"
     }
   ],
@@ -18,8 +14,8 @@
     }
   },
   "functions": {
-    "api/**/*.js": {
-      "runtime": "@vercel/node@3",
+    "vercel/index.js": {
+      "runtime": "@vercel/node",
       "maxDuration": 10
     }
   }
