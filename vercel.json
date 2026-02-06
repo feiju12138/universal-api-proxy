@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "name": "universal-api-proxy",
+  "public": true,
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/vercel/index.js"
+    },
+    {
+      "src": "/api",
+      "dest": "/vercel/index.js"
+    }
+  ],
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "@vercel/node@3",
+      "maxDuration": 10
+    }
+  }
+}
