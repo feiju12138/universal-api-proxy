@@ -19,7 +19,7 @@
   },
   "functions": {
     "vercel/index.js": {
-      "runtime": "@vercel/node@3",
+      "runtime": "@vercel/node",
       "maxDuration": 10
     }
   }
