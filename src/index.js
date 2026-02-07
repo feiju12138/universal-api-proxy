@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// 统一配置响应头（含跨域，按需开启）
+// 统一配置响应头
 app.use((req, res, next) => {
   // 允许跨域，生产环境可替换为指定域名
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -19,13 +19,13 @@ app.use((req, res, next) => {
   next();
 });
 
-// 根路由
+// root
 app.get("/", (req, res) => {
   res.setHeader("Content-Type", "text/plain; charset=utf-8");
   res.send("ok");
 });
 
-// api路由
+// api
 app.get("/api", async (req, res) => {
   // 读取环境变量
   const TARGET_API_URL = process.env.TARGET_API_URL;
@@ -46,13 +46,12 @@ app.get("/api", async (req, res) => {
     res.setHeader("Content-Type", "application/json; charset=utf-8");
     res.send(result);
   } catch (err) {
-    // 异常处理
     console.error("Request error:", err);
-    res.status(500).set("Content-Type", "text/plain; charset=utf-8").send(err.message || "Server Internal Error");
+    res.status(500).set("Content-Type", "text/plain; charset=utf-8").send(err.message || "vercel: Server Internal Error");
   }
 });
 
-// 404路由
+// 404
 app.use((req, res) => {
   res.setHeader("Content-Type", "text/plain; charset=utf-8");
   res.status(404).send("404");
