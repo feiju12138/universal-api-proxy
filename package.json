@@ -1,11 +1,11 @@
 {
   "name": "universal-api-proxy",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Lightweight cross-platform serverless API proxy for hiding secret keys. Deploy for free on Vercel, Cloudflare Workers & more with zero hosting costs.",
-  "main": "local-dev.js",
+  "main": "src/local-dev.js",
   "scripts": {
-    "start": "node local-dev.js",
-    "dev": "node local-dev.js"
+    "start": "node src/local-dev.js",
+    "dev": "node src/local-dev.js"
   },
   "repository": {
     "type": "git",

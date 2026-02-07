@@ -1,4 +1,4 @@
-const app = require("./src/index.js");
+const app = require("./index.js");
 
 // 配置本地服务端口
 const PORT = process.env.PORT || 9000;

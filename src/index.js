@@ -1,5 +1,5 @@
 const express = require("express");
-const { fetchTargetApi } = require("../core.js");
+const { fetchTargetApi } = require("./core.js");
 
 // 创建 Express 实例
 const app = express();
