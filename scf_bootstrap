@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-/var/lang/node20/bin/node src/tencent-cloud-scf-entry-point.js
