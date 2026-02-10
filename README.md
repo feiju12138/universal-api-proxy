@@ -1,0 +1,1 @@
+[Clickme](https://loli.fj.cn/2026/02/05/%E9%80%9A%E8%BF%87UptimeRobot%E7%9A%84API%E5%AE%9E%E7%8E%B0%E6%89%B9%E9%87%8FURL%E5%AD%98%E6%B4%BB%E7%9B%91%E6%B5%8B/)
